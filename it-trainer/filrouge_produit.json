@@ -1,0 +1,43 @@
+{
+    "produits":[
+      {
+        "id_produit":1,
+        "id_categorie":1,
+        "id_formateur":1,
+        "id_niveau":"1",
+        "duree":22,
+        "titre_produit":"CSS3/HTML5",
+        "description":"pour debutants",
+        "prix":12000,
+        "date_debut":"15/02/2023",
+        "lieu":"Nice",
+        "lien_Test":"http://www.test.org"
+      },
+      {
+        "id_produit":1,
+        "id_categorie":1,
+        "id_formateur":1,
+        "id_niveau":"1",
+        "duree":22,
+        "titre_produit":"CSS3/HTML5",
+        "description":"pour debutants",
+        "prix":12000,
+        "date_debut":"15/02/2023",
+        "lieu":"Nice",
+        "lien_Test":"http://www.test.org"
+      },
+      {
+        "id_produit":1,
+        "id_categorie":1,
+        "id_formateur":1,
+        "id_niveau":"1",
+        "duree":22,
+        "titre_produit":"CSS3/HTML5",
+        "description":"pour debutants",
+        "prix":12000,
+        "date_debut":"15/02/2023",
+        "lieu":"Nice",
+        "lien_Test":"http://www.test.org"
+      }
+  ]
+}
