@@ -1,6 +1,6 @@
 export interface Adresse {
-    rue?: string;
-    cp?: string;
-    ville?: string;
-    pays?: string;
+    rue?: string
+    cp?: string
+    ville?: string
+    pays?: string
 }
