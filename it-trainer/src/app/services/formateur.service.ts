@@ -6,7 +6,7 @@ import { Formateur } from '../interfaces/formateur';
   providedIn: 'root'
 })
 export class FormateurService {
-  private url: string = "http://localhost:5555/formateurs";
+  private url: string = "http://localhost:5555/formateur";
   constructor(private http: HttpClient) { }
   getAllFormateurs() {
     return this.http.get<Formateur[]>(this.url);
