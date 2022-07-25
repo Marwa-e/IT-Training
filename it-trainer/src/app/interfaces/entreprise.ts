@@ -1,9 +1,11 @@
 import { Adresse } from "./adresse";
+import { Client } from "./client";
+import { DetailsUser } from "./details-user";
 
-export interface Entreprise {
+export interface Entreprise extends Client{
     id?: number;
     raison_sociale?: string;
     telephone?: string;
-    id_details?: number;
-    adresse?: Adresse;
+    details?: DetailsUser;
+    adresses?: Adresse[];
 }

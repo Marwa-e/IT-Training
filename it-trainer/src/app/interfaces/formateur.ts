@@ -1,6 +1,6 @@
 export interface Formateur {
-    id?: number;
-    nom?: string;
-    prenom?: string;
-    email?: string;
+    id?: number
+    nom?: string
+    prenom?: string
+    email?: string
 }

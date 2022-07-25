@@ -1,10 +1,12 @@
-export interface User {
-    id?: number;
-    nom?: string;
-    prenom?: string;
-    email?: string;
-    password?: string;
-    id_niveau?: string;
-    id_entreprise?: number;
-    id_details?: number;
+import { Client } from "./client";
+import { DetailsUser } from "./details-user";
+import { Entreprise } from "./entreprise";
+import { Niveau } from "./niveau";
+
+export interface User extends Client {
+    id?: number
+    password?: string
+    niveau?: Niveau
+    entreprise?: Entreprise
+    details?: DetailsUser
 }
