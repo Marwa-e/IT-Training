@@ -23,4 +23,10 @@ export class FormationsService {
   updateFormation(f: Formation) {
     return this.http.put<Formation>(this.url + '/' + f.id, f);
   }
+  getOneLieu(lieu: string) {
+    return this.http.get<Formation>(this.url + '/' + lieu);
+  }
+  getOneNiveau(id_niveau: number) {
+    return this.http.get<Formation>(this.url + '/' + id_niveau);
+  }
 }
