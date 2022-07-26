@@ -54,9 +54,7 @@
 
                 <div class="form-group">
                     <label class="form-text" for="niveau">Niveau</label>
-                   <span class="text-danger h6">
-                     TODO : FAIRE UN SELECT APRES AVOIR
-                    REMPLI LA TABLE DES NIVEAUX</span>
+         
                     <select class="form-control" name="niveau" id="niveau"  #niveau=ngModel [(ngModel)]="internaute.niveau" >
                         <option *ngFor="let elt of niveaux">{{elt.intitule}}</option>
                     </select>
@@ -97,12 +95,11 @@
                     <td>{{ elt.prenom }}</td>
                     <td>{{ elt.email }}</td>
                     <td>
-                        <button class="btn" (click)="supprimerInternaute(elt.id ?? 0)">
-                            <i style="color:tomato" class="fas fa-trash-alt">supprimer {{ elt.id }}</i>
+                        <button class="btn btn-outline-danger" (click)="supprimerInternaute(elt.id ?? 0)">
+                        supprimer
                         </button>
                         <!-- <button class="btn" [routerLink]="['/internaute',elt.id ]"><i class="far fa-edit">editer</i></button> -->
-                        <button class="btn" (click)="afficherInternaute(elt.id ?? 0)"><i class="far fa-edit">editer</i></button>
-                        <p ></p>
+                        <button class="btn btn-outline-primary" (click)="afficherInternaute(elt.id ?? 0)"><i class="far fa-edit">editer</i></button>
                     </td>
                 </tr>
             </tbody>
