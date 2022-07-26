@@ -6,7 +6,7 @@ import { Formation } from '../interfaces/formation';
   providedIn: 'root'
 })
 export class FormationsService {
-  private url: string = "http://localhost:5555/formation";
+  private url: string = "http://localhost:8080/formations";
   constructor(private http: HttpClient) { }
   getAllFormations() {
     return this.http.get<Formation[]>(this.url);

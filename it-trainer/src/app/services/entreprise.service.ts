@@ -6,7 +6,7 @@ import { Entreprise } from '../interfaces/entreprise';
   providedIn: 'root'
 })
 export class EntrepriseService {
-  private url: string = "http://localhost:5555/entreprise";
+  private url: string = "http://localhost:8080/entreprises";
   constructor(private http: HttpClient) { }
   getAllEntreprises() {
     return this.http.get<Entreprise[]>(this.url);
