@@ -6,7 +6,7 @@ import { User } from '../interfaces/user';
   providedIn: 'root'
 })
 export class UserService {
-  private url: string = "http://localhost:5555/user";
+  private url: string = "http://localhost:5555/users";
   constructor(private http: HttpClient) { }
   checkUser(u: User) {
     return this.http.get<User[]>(`${this.url}?nom=${u.nom}&password=${u.password}`);
