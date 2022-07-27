@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { ClientComponent } from './composants/client/client.component';
 import { FormsModule } from '@angular/forms';
 import { InternauteComponent } from './composants/internaute/internaute.component';
+import { UserLoginComponent } from './composants/user-login/user-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientComponent,
-    InternauteComponent
+    InternauteComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
