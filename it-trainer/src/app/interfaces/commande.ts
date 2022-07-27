@@ -6,4 +6,5 @@ export interface Commande {
     produits?: Produit[]
     user?:User
     date_validation?: Date
+    solde?:number
 }
