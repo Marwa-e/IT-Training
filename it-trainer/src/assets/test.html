@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Site E-Learning</title>
-    <!- fontawesome cdn ->
+    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -20,13 +20,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <! - custom css ->
+    <! -- custom css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-------------------------------------------Navbar------------------------------------------>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid">
+      <div class="container">
+
         <a class="navbar-brand" href="#">IT Trainer</a>
         <button
           class="navbar-toggler"
@@ -59,13 +60,49 @@
               <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-dark me-2">
-              Se connecter
+
+          <div class = "order-lg-2 nav-btns position-relative">
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-shopping-cart"></i>
+                <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
             </button>
-            <button type="button" class="btn btn-dark">S'inscrire</button>
-          </div>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-heart"></i>
+                <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">2</span>
+            </button>
+
         </div>
+
+
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-dark text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt=""
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul
+              class="dropdown-menu text-small"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">Mes cours</a></li>
+              <li><a class="dropdown-item" href="#">Profil</a></li>
+              <li><a class="dropdown-item" href="#">Paramètres</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
+            </ul>
+          </div> </div>
+
+        
       </div>
     </nav>
     <!-----------------------------------------------------------Caroussel--------------------------------------->
@@ -157,8 +194,6 @@
         <p>Découvrez les formations IT Trainer</p>
       </blockquote>
 
-      <!----------------------------------------------------------------------------------------------------------->
-
       <!-------------------------------------------------  Recherche dans le body --------------------------------->
 
       <div class="container">
@@ -238,19 +273,15 @@
         </div>
       </nav>
 
-      <div class="row g-5">
+      <div class="row g-4">
         <div class="col-3">
           <div class="card">
-            <img src="img/img1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h6 class="card-title">Scrum: Réussir la certification</h6>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <a href="#!" class="btn btn-primary">Voir</a>
-              <div>
+            <img src="img/img1.jpg" class="card-img-bottom" alt="..." />
+            <div class="card-header text-left" >
+              <h6 class="card-title" style = "font-size:1.25em;">Scrum: Réussir la certification</h6>
+             </div>
+              <div class="card-body text-center" style = "margin:0; padding:0;">
+                <p>Formateur: </p>
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                   class="rounded-circle"
@@ -258,14 +289,14 @@
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
-                <a href="" class="product-like-icon"
-                  ><i class="far fa-heart"></i
-                ></a>
                 <p>Eric Bruneau</p>
+              </div>
+
+                
 
                 <div class="rating">
                   <p>
-                    Note:
+            
                     <a href="#5" title="Donner 5 étoiles">☆</a>
                     <a href="#4" title="Donner 4 étoiles">☆</a>
                     <a href="#3" title="Donner 3 étoiles">☆</a>
@@ -273,7 +304,11 @@
                     <a href="#1" title="Donner 1 étoile">☆</a>
                   </p>
                 </div>
-              </div>
+              
+            </div>
+            <div class="card-footer align-items-center">
+                <a href="#!" class="btn-test ">Voir</a>
+
             </div>
           </div>
         </div>
@@ -370,7 +405,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
     <!------------------------------------------------- Footer --------------------------------->
 

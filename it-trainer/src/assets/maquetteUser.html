@@ -26,7 +26,20 @@
   <body>
     <!-------------------------------------------Navbar------------------------------------------>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid">
+      <div class="container">
+        <div class = "order-lg-2 nav-btns">
+          <button type = "button" class = "btn position-relative">
+              <i class = "fa fa-shopping-cart"></i>
+              <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+          </button>
+          <button type = "button" class = "btn position-relative">
+              <i class = "fa fa-heart"></i>
+              <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">2</span>
+          </button>
+          <button type = "button" class = "btn position-relative">
+              <i class = "fa fa-search"></i>
+          </button>
+      </div>
         <a class="navbar-brand" href="#">IT Trainer</a>
         <button
           class="navbar-toggler"
@@ -59,13 +72,35 @@
               <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
-          <div class="text-end">
-            <button type="button" class="btn btn-outline-dark me-2">
-              Se connecter
-            </button>
-            <button type="button" class="btn btn-dark">S'inscrire</button>
+          <div class="dropdown text-end">
+            <a
+              href="#"
+              class="d-block link-dark text-decoration-none dropdown-toggle"
+              id="dropdownUser1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://github.com/mdo.png"
+                alt="mdo"
+                width="32"
+                height="32"
+                class="rounded-circle"
+              />
+            </a>
+            <ul
+              class="dropdown-menu text-small"
+              aria-labelledby="dropdownUser1"
+            >
+              <li><a class="dropdown-item" href="#">Mes cours</a></li>
+              <li><a class="dropdown-item" href="#">Profil</a></li>
+              <li><a class="dropdown-item" href="#">Paramètres</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
+            </ul>
           </div>
         </div>
+        
       </div>
     </nav>
     <!-----------------------------------------------------------Caroussel--------------------------------------->
@@ -156,8 +191,6 @@
       <blockquote class="blockquote text-center" style="padding: 3rem">
         <p>Découvrez les formations IT Trainer</p>
       </blockquote>
-
-      <!----------------------------------------------------------------------------------------------------------->
 
       <!-------------------------------------------------  Recherche dans le body --------------------------------->
 
@@ -258,9 +291,7 @@
                   alt="Black and White Portrait of a Man"
                   loading="lazy"
                 />
-                <a href="" class="product-like-icon"
-                  ><i class="far fa-heart"></i
-                ></a>
+
                 <p>Eric Bruneau</p>
 
                 <div class="rating">

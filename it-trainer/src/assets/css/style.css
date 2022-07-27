@@ -1,3 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+
+
+
+
+.btn-test {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  padding: .25em 1em;
+  background: darkgrey;
+  border: 1px solid #91C9FF;
+  outline: none;
+  text-decoration: none;
+  border-radius: .2em;
+  transition: .3s ease-in-out;
+}
+
+
+.btn-test:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn-test:hover svg {
+  stroke-dashoffset: -480;
+}
+
+
+
+
+
+
+
+
+
+
+
+:root {
+   --lg-font: 'Kaisei Opti', serif;
+   --sm-font: 'Poppins', sans-serif;
+   --blue:#3d04f7;
+}
+
+body {
+   font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary {
+   background-color: #3d04f7;
+}
+
+
+.bg-secondary{
+   background-color: rgb(176, 71, 71);
+}
+/* navrbar */
+
+.navbar {
+   font-family: var(--lg-font);
+}
+.nav-link:hover {
+   color: var(--blue);
+}
 .search{
     position: relative;
     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
