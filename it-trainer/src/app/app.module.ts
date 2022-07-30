@@ -7,14 +7,22 @@ import { AppComponent } from './app.component';
 import { ClientComponent } from './composants/client/client.component';
 import { FormsModule } from '@angular/forms';
 import { InternauteComponent } from './composants/internaute/internaute.component';
-import { UserLoginComponent } from './composants/user-login/user-login.component';
+import { MenuComponent } from './composants/menu/menu.component';
+import { CarousselComponent } from './composants/caroussel/caroussel.component';
+import { RechercherComponent } from './composants/rechercher/rechercher.component';
+import { FormationComponent } from './composants/formation/formation.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientComponent,
     InternauteComponent,
-    UserLoginComponent
+    MenuComponent,
+    FormationComponent,
+    CarousselComponent,
+    RechercherComponent
   ],
   imports: [
     BrowserModule,
