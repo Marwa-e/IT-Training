@@ -16,6 +16,9 @@ import { FormationComponent } from './composants/formation/formation.component';
 import { LoginComponent } from './composants/login/login.component';
 import { InscriptionComponent } from './composants/inscription/inscription.component';
 import { HomeComponent } from './composants/home/home.component';
+import { FormateurComponent } from './composants/formateur/formateur.component';
+import { AdresseComponent } from './composants/adresse/adresse.component';
+import { EntrepriseComponent } from './composants/entreprise/entreprise.component';
 
 
 
@@ -33,7 +36,10 @@ import { HomeComponent } from './composants/home/home.component';
     CarousselComponent,
     RechercherComponent,
     LoginComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    FormateurComponent,
+    AdresseComponent,
+    EntrepriseComponent
   ],
   imports: [
     BrowserModule,

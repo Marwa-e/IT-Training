@@ -1,0 +1,47 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<div class="container">
+    <h1>Formateur</h1>
+    <h3>Nouveau formateur</h3>
+    <div class="row">
+        <div class="col-6">
+            <form class=form  (ngSubmit)="ajouterFormateur()" #monForm="ngForm">
+                <div class="form-group">
+                 <label class="form-text" for="nom">Nom</label>
+                 <input class="form-control" type="text" name="nom" [(ngModel)]="formateur.nom" id="nom" #nom="ngModel">
+                 <div [hidden]="nom.valid || nom.pristine" class="text-center text-danger">
+                    Le nom est obligatoire
+                </div>
+                 <label class="form-text" for="prenom">Prenom</label>
+                 <input class="form-control" type="text" name="prenom" id="prenom"  [(ngModel)]="formateur.prenom" #prenom=ngModel>
+                 <div [hidden]="prenom.valid || prenom.pristine" class="text-center text-danger">
+                    Le prénom est obligatoire
+                </div>
+            </div>
+                <div class="form-group">
+                 <label class="form-text" for="email">email</label>
+                 <input class="form-control" type="email" name="email" id="email" [(ngModel)]="formateur.email" #email=ngModel>
+                 <div [hidden]="email.valid || email.pristine" class="text-center text-danger">
+                    L'email est obligatoire
+                </div>
+                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+                </div>
+
+                <div>
+                    <label for="telephone" class="form-text">Telephone</label>
+                    <input type="text" class="form-control" name="telephone" id="telephone" [(ngModel)]="formateur.telephone" #telephone="ngModel">
+                    <div [hidden]="telephone.valid || telephone.pristine" class="text-center text-danger">Le téléphone est obligatoire</div>
+                </div>
+
+                <div [hidden]="monForm.valid || monForm.pristine" class="text-danger"> ATTENTION !!! tous les champs doivent être remplis !</div>
+                <button [disabled]="monForm.invalid" (click)="ajouterFormateur()" class="btn btn-primary" >Ajouter</button>
+             </form>
+        </div>
+        <div class="col-6">
+            <h4 class="text-primary">{{ formateur.nom }}, {{ formateur.prenom }}</h4>
+            <p class="text-success">{{formateur.email}}</p>
+        </div>
+    </div>

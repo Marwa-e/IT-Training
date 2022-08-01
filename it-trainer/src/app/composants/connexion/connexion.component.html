@@ -4,15 +4,19 @@
             <h2>Se connecter</h2>
             <span class="nav-item" *ngIf="!isConnected; else deconnection">
                 <form (ngSubmit)="connexion()">
-                    <input type="text" placeholder="Nom d'utilisateur" name="nom" [(ngModel)]="utilisateur.nom">
-                    <input type="password" placeholder="Mot de passe" name="motDePasse" [(ngModel)]="utilisateur.password">
-                    <button class="btn">
+                    <!-- <input type="text" placeholder="Nom d'utilisateur" name="nom" [(ngModel)]="utilisateur.nom">
+                    <input type="password" placeholder="Mot de passe" name="motDePasse" [(ngModel)]="utilisateur.password"> -->
+                    <label for="inputEmail" class="visually-hidden">Adresse Email</label>
+                    <input type="email" id="inputEmail" class="form-control" placeholder="Adresse Email" required autofocus>
+                    <label for="inputPassword" class="visually-hidden">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <button class="btn" type="submit" >
                         <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </form>
             </span>
             <ng-template #deconnection>
-                Bonjour {{ utilisateur.prenom | titlecase }} {{ utilisateur.nom | uppercase }}
+                Bonjour {{ internaute.prenom | titlecase }} {{ internaute.nom | uppercase }}
                 <button class="btn" (click)="deconnexion()">
                     <i class="fas fa-sign-out-alt"></i>
                 </button>
@@ -20,15 +24,9 @@
             <h2>S'inscrire</h2>
             <span class="nav-item" *ngIf="!isConnected; else deconnection">
                 <form (ngSubmit)="inscription()">
-                    <input type="text" placeholder="Nom d'utilisateur" name="nom" [(ngModel)]="utilisateur.nom">
-                    <input type="text" placeholder="Prenom" name="prenom" [(ngModel)]="utilisateur.prenom">
-                    <input type="text" placeholder="Adresse email" name="email" [(ngModel)]="utilisateur.email">
-                    <!-- <input type="password" placeholder="Adresse" name="adresse" [(ngModel)]="utilisateur.Adresse"> -->
-                    <div>Veuiller choisir un mot de passe</div>
-                    <input type="password" placeholder="Mot de passe" name="motDePasse" [(ngModel)]="utilisateur.password">
-                    <div>Veuiller saisir a nouveau votre mot de passe</div>
-                    <input type="text" placeholder="Mot de Passe" name="motDePasse" [(ngModel)]="utilisateur.password">
-                    <button>S'inscrire</button>
+                    <input type="text" placeholder="Nom d'utilisateur" name="nom" [(ngModel)]="internaute.nom">
+                    <input type="text" placeholder="Prenom" name="prenom" [(ngModel)]="internaute.prenom">
+                    <button type="submit">S'inscrire</button>
                 </form>
             </span>
         </ul>
