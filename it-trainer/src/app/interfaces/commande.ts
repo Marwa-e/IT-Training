@@ -1,10 +1,9 @@
-import { Produit } from "./produit";
-import { User } from "./user";
+import { Formation } from "./formation";
+
 
 export interface Commande {
     id?: number
-    produits?: Produit[]
-    user?:User
+    formations?: Formation[]
     date_validation?: Date
     solde?:number
 }

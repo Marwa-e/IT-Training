@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { User } from 'src/app/interfaces/user';
+import { Internaute } from 'src/app/interfaces/internaute';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class ConnexionComponent implements OnInit {
 
-  utilisateur: User = {};
+  utilisateur: Internaute = {};
   isConnected = false;
   constructor(private router: Router, private us: UserService) { }
 
@@ -33,6 +33,6 @@ export class ConnexionComponent implements OnInit {
     localStorage.removeItem('user');
   }
   inscription() {
-    
+
   }
 }

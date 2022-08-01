@@ -18,6 +18,8 @@ export class InternauteComponent implements OnInit {
   internaute: Internaute = {}
   internautes: Internaute[] = []
   niveaux: Niveau[] = []
+  niveau:Niveau={}
+  niveauIntitule?:string
 
   constructor(private route: ActivatedRoute,private cl: InternauteService,private nv: NiveauService, private router: Router) {
     // ici on récupère l'id en paramètre de get pour afficher le formulaire avec les bons placeholder et modifier un Internaute
@@ -58,7 +60,13 @@ export class InternauteComponent implements OnInit {
     })
   }
 
-
+  getOneNiveau(id:number){
+  this.nv.getOneNiveau(id).subscribe(resul => {
+    this.niveau = resul
+    this.niveauIntitule=this.niveau.intitule
+  })
+}
+  
   initInternaute() {
 
     this.nv.getAllNiveaux().subscribe(resul => {
