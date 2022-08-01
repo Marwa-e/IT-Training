@@ -67,6 +67,24 @@
   border-color: #206bfb;
 }
 
+.btn-connexion,
+.btn-connexion:focus {
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 4px;
+  line-height: 1;
+  color: #5f687b;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #cdd1d9;
+}
+
+.btn-connexion,
+.btn-connexion:focus:hover {
+  background: #206bfb;
+  color: #fff;
+  border-color: #206bfb;
+}
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -244,3 +262,11 @@
   display: block;
 }
 
+/**
+* Modal bouton connexion
+*/
+
+
+.modal.show {
+  display: block;
+}

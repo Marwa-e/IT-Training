@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientComponent } from './composants/client/client.component';
@@ -16,9 +15,14 @@ import { FormationComponent } from './composants/formation/formation.component';
 import { LoginComponent } from './composants/login/login.component';
 import { InscriptionComponent } from './composants/inscription/inscription.component';
 import { HomeComponent } from './composants/home/home.component';
+<<<<<<< HEAD
 import { FormateurComponent } from './composants/formateur/formateur.component';
 import { AdresseComponent } from './composants/adresse/adresse.component';
 import { EntrepriseComponent } from './composants/entreprise/entreprise.component';
+=======
+import { EquipeComponent } from './composants/equipe/equipe.component';
+
+>>>>>>> 769d725e36cfe4a642bd227bf34eb102a8c596f2
 
 
 
@@ -37,16 +41,26 @@ import { EntrepriseComponent } from './composants/entreprise/entreprise.componen
     RechercherComponent,
     LoginComponent,
     InscriptionComponent,
+<<<<<<< HEAD
     FormateurComponent,
     AdresseComponent,
     EntrepriseComponent
+=======
+    EquipeComponent,
+    
+
+    InscriptionComponent
+>>>>>>> 769d725e36cfe4a642bd227bf34eb102a8c596f2
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
