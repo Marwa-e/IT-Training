@@ -24,4 +24,7 @@ export class InternauteService {
   updateInternaute(f: Internaute) {
     return this.http.put<Internaute>(this.url + '/' + f.id, f);
   }
+  checkUser(u: Internaute) {
+    return this.http.get<Internaute[]>(`${this.url}?nom=${u.nom}&password=${u.password}`);
+  }
 }

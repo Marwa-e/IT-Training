@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ClientComponent } from './composants/client/client.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InternauteComponent } from './composants/internaute/internaute.component';
+//import { UserLoginComponent } from './composants/user-login/user-login.component';
+import { ConnexionComponent } from './composants/connexion/connexion.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { CarousselComponent } from './composants/caroussel/caroussel.component';
 import { RechercherComponent } from './composants/rechercher/rechercher.component';
@@ -24,6 +26,8 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
     AppComponent,
     ClientComponent,
     InternauteComponent,
+   // UserLoginComponent,
+    ConnexionComponent,
     HomeComponent,
     MenuComponent,
     FormationComponent,
@@ -34,6 +38,7 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
     EquipeComponent,
     
 
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
