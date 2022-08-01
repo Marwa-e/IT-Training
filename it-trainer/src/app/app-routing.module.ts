@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'caroussel', component: CarousselComponent },
   { path: 'rechercher', component: RechercherComponent },
   { path: 'formation', component: FormationComponent },
+  { path: 'formation/:id', component: FormationComponent }, 
   { path: 'equipe', component: EquipeComponent },
   { path: 'client', component: ClientComponent },
   { path: 'internaute', component: InternauteComponent }, 

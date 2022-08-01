@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Categorie } from 'src/app/interfaces/categorie';
+import { CategorieService } from 'src/app/services/categorie.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  categoriesInitiales:Categorie[]=[]
+  constructor(private route: ActivatedRoute,private cat:CategorieService,private router:Router) { }
 
   ngOnInit(): void {
+    this.cat.findByMere(1).subscribe(resul => {
+      this.categoriesInitiales=resul;
+    })
   }
-
 }
