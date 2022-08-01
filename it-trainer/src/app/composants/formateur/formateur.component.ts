@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Formateur } from 'src/app/interfaces/formateur';
 import { FormateurService } from 'src/app/services/formateur.service';
 
@@ -14,7 +14,7 @@ export class FormateurComponent implements OnInit {
   formateur : Formateur = {} ;
   formateurs : Formateur[] = [] ;
 
-  constructor(private router : Router, private f : FormateurService) { }
+  constructor(private router : Router, private f : FormateurService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.initFormateur();

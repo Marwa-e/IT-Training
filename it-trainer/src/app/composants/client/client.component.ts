@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Client } from 'src/app/interfaces/client';
 import { ClientService } from 'src/app/services/client.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AdresseService } from 'src/app/services/adresse.service';
+import { Adresse } from 'src/app/interfaces/adresse';
 
 @Component({
   selector: 'app-client',
@@ -12,8 +14,9 @@ export class ClientComponent implements OnInit {
   id = 0 // TODO : A REVOIR
   client: Client ={};
   clients: Client[]=[];
+  adresse:Adresse={};
 
-  constructor(private route: ActivatedRoute,private cl:ClientService,private router : Router) { }
+  constructor(private route: ActivatedRoute,private cl:ClientService,private router : Router, private a : AdresseService) { }
 
   ngOnInit(): void {
     this.initClient()
@@ -39,6 +42,11 @@ export class ClientComponent implements OnInit {
   modifierClient(){
     this.cl.updateClient(this.client).subscribe(res => {
       this.router.navigateByUrl('/client');
+    })
+  }
+  getOneAdresse(id:number){
+    this.a.getOneAdresse(id).subscribe(resul => {
+      this.adresse = resul;
     })
   }
 
