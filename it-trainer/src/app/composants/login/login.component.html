@@ -1,4 +1,11 @@
-<form [formGroup]="form" (submit)="submit()" class="form-inline">
-  <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
-  <input formControlName="motDePasse" type="password" class="form-control" placeholder="Mot de passe" required>
+<form>
+  <div class="form-inline">
+    <label>Email</label>
+    <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
+  </div>
+  <div>
+    <label>Mot de passe</label>
+    <input formControlName="motDePasse" type="password" class="form-control" placeholder="Mot de passe" required>
+  </div>
+  <button type="submit">Se connecter</button>
 </form>
