@@ -28,7 +28,8 @@ motDePasse:'',
   }
 
   submit(): void {
-    this.http.post('http://localhost:8000/api/inscription', this.form.getRawValue())
+    this.http.post('http://localhost:4200/api/inscription', this.form.getRawValue(),
+    {withCredentials:true})
       .subscribe(() => this.router.navigate(['/login']));
   }
 }

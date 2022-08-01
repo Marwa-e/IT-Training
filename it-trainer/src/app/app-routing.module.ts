@@ -9,6 +9,7 @@ import { InscriptionComponent } from './composants/inscription/inscription.compo
 import { CarousselComponent } from './composants/caroussel/caroussel.component';
 import { RechercherComponent } from './composants/rechercher/rechercher.component';
 import { FormationComponent } from './composants/formation/formation.component';
+import { EquipeComponent } from './composants/equipe/equipe.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'caroussel', component: CarousselComponent },
   { path: 'rechercher', component: RechercherComponent },
   { path: 'formation', component: FormationComponent },
+  { path: 'equipe', component: EquipeComponent },
   { path: 'client', component: ClientComponent },
   { path: 'internaute', component: InternauteComponent }, 
   { path: 'internaute/:id', component: InternauteComponent } 

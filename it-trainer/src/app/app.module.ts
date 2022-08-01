@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientComponent } from './composants/client/client.component';
@@ -14,6 +13,8 @@ import { FormationComponent } from './composants/formation/formation.component';
 import { LoginComponent } from './composants/login/login.component';
 import { InscriptionComponent } from './composants/inscription/inscription.component';
 import { HomeComponent } from './composants/home/home.component';
+import { EquipeComponent } from './composants/equipe/equipe.component';
+
 
 
 
@@ -30,6 +31,7 @@ import { HomeComponent } from './composants/home/home.component';
     RechercherComponent,
     LoginComponent,
     InscriptionComponent,
+    EquipeComponent,
     
 
   ],
@@ -38,7 +40,10 @@ import { HomeComponent } from './composants/home/home.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
