@@ -10,20 +10,21 @@ import { InternauteService } from 'src/app/services/internaute.service';
 })
 export class ConnexionComponent implements OnInit {
 
-  utilisateur: Internaute = {};
+  internaute: Internaute = {};
   isConnected = false;
   constructor(private router: Router, private us: InternauteService) { }
 
   ngOnInit(): void {
+  this.internaute.nom = '';
   }
 
   connexion() {
     this.router.navigateByUrl(`/connexion`)
-    this.us.checkUser(this.utilisateur).subscribe(res => {
+    this.us.checkUser(this.internaute).subscribe(res => {
       if (res.length > 0) {
         this.isConnected = true;
         const userString = JSON.stringify(res[0]);
-        this.utilisateur = res[0];
+        this.internaute = res[0];
         localStorage.setItem('user', userString);
       }
     })
