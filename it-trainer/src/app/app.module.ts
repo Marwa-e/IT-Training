@@ -8,13 +8,15 @@ import { ClientComponent } from './composants/client/client.component';
 import { FormsModule } from '@angular/forms';
 import { InternauteComponent } from './composants/internaute/internaute.component';
 import { UserLoginComponent } from './composants/user-login/user-login.component';
+import { ConnexionComponent } from './composants/connexion/connexion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientComponent,
     InternauteComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    ConnexionComponent
   ],
   imports: [
     BrowserModule,
