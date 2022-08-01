@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Internaute } from 'src/app/interfaces/internaute';
 import { InternauteService } from 'src/app/services/internaute.service';
 
@@ -12,7 +12,7 @@ export class ConnexionComponent implements OnInit {
 
   internaute: Internaute = {};
   isConnected = false;
-  constructor(private router: Router, private us: InternauteService) { }
+  constructor(private router: Router, private us: InternauteService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   this.internaute.nom = '';

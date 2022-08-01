@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Entreprise } from 'src/app/interfaces/entreprise';
 import { EntrepriseService } from 'src/app/services/entreprise.service';
 
@@ -13,7 +13,7 @@ export class EntrepriseComponent implements OnInit {
   entreprise : Entreprise = {} ;
   entreprises : Entreprise[] = [] ;
 
-  constructor(private router : Router, private e : EntrepriseService) { }
+  constructor(private router : Router, private e : EntrepriseService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.initEntreprise();

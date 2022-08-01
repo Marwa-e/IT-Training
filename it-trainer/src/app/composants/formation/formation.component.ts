@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Formation } from 'src/app/interfaces/formation';
 import { FormationsService } from 'src/app/services/formations.service';
 import { NiveauService } from 'src/app/services/niveau.service';
@@ -14,7 +14,7 @@ export class FormationComponent implements OnInit {
   formation : Formation = {} ;
   formations : Formation[] = [] ;
 
-  constructor(private router : Router, private f : FormationsService, private nv: NiveauService) { }
+  constructor(private router : Router, private f : FormationsService, private nv: NiveauService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.initFormation();
