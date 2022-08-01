@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Adresse } from 'src/app/interfaces/adresse';
 import { AdresseService } from 'src/app/services/adresse.service';
 
@@ -13,7 +13,7 @@ export class AdresseComponent implements OnInit {
   adresse : Adresse = {} ;
   adresses : Adresse[] = [] ;
 
-  constructor(private router : Router, private a : AdresseService) { }
+  constructor(private router : Router, private a : AdresseService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.initAdresse();
