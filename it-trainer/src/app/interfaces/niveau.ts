@@ -1,4 +1,4 @@
 export interface Niveau {
-    id?: number;
-    intitule?: string;
+    id?: number
+    intitule?: string
 }

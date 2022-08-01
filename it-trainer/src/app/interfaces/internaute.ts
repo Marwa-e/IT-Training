@@ -15,5 +15,4 @@ export interface Internaute {
     niveau?: Niveau
     adresses?: Adresse[]
     telephones?: Telephone[]
-    entreprise?: Entreprise
 }
