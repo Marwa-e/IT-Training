@@ -23,13 +23,10 @@
               "src/assets"
             ],
             "styles": [
-<<<<<<< HEAD
               "../node_modules/bootstrap/dist/css/bootstrap.css",
-          "../node_modules/font-awesome/css/font-awesome.css"
-=======
+          "../node_modules/font-awesome/css/font-awesome.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
->>>>>>> f034b77ee8e255ceec28ee7c5b40ef3fa35b7b2f
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"

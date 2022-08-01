@@ -5,37 +5,42 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientComponent } from './composants/client/client.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InternauteComponent } from './composants/internaute/internaute.component';
-<<<<<<< HEAD
-import { UserLoginComponent } from './composants/user-login/user-login.component';
+//import { UserLoginComponent } from './composants/user-login/user-login.component';
 import { ConnexionComponent } from './composants/connexion/connexion.component';
-=======
 import { MenuComponent } from './composants/menu/menu.component';
 import { CarousselComponent } from './composants/caroussel/caroussel.component';
 import { RechercherComponent } from './composants/rechercher/rechercher.component';
 import { FormationComponent } from './composants/formation/formation.component';
+import { LoginComponent } from './composants/login/login.component';
+import { InscriptionComponent } from './composants/inscription/inscription.component';
+import { HomeComponent } from './composants/home/home.component';
 
 
->>>>>>> f034b77ee8e255ceec28ee7c5b40ef3fa35b7b2f
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientComponent,
     InternauteComponent,
-    UserLoginComponent,
-    ConnexionComponent
+   // UserLoginComponent,
+    ConnexionComponent,
+    HomeComponent,
     MenuComponent,
     FormationComponent,
     CarousselComponent,
-    RechercherComponent
+    RechercherComponent,
+    LoginComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

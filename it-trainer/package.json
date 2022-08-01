@@ -18,13 +18,10 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
-<<<<<<< HEAD
     "font-awesome": "^4.7.0",
     "json-server": "^0.17.0",
-=======
     "bootstrap": "^5.2.0",
     "json-server": "^0.4.2",
->>>>>>> f034b77ee8e255ceec28ee7c5b40ef3fa35b7b2f
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
