@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -38,8 +39,8 @@ import { MenuComponent } from './composants/menu/menu.component';
     FormateurComponent,
     AdresseComponent,
     EntrepriseComponent,
-    EquipeComponent,
-    InscriptionComponent
+    EquipeComponent
+    
   ],
   imports: [
     BrowserModule,
