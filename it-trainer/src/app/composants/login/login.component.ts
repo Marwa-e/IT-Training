@@ -1,7 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { EmailValidator, FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -9,26 +8,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  form!: FormGroup;
+ loginForm!: FormGroup;
 
 
-  constructor(
-  private formBuilder: FormBuilder,
-  private http: HttpClient,
-  private router: Router,
-  ) {
-    
-  }
+  constructor(private formBuilder: FormBuilder) {}
   
   ngOnInit(): void {
-    this.form = this.formBuilder.group({
-      email:'',
-      motDePasse:'',
+    this.loginForm = this.formBuilder.group({ // créer une instance de FormGroup
+      email:[],                           // créer une instance de FormControl
+      motDePasse:[],                      // créer une instance de FormControl
   });
 }
-submit(): void {
-  this.http.post('http://localhost:4200/api/inscription', this.form.getRawValue(),
-  {withCredentials:true})
-    .subscribe(() => this.router.navigate(['/']));
+
+// Methode appelée lors du clic sur le bouton "submit" 
+
+login() {
+  console.log('Données du formulaire...', this.loginForm.value);
 }
 }
+

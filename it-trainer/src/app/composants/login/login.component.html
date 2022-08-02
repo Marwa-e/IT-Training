@@ -1,9 +1,9 @@
-<form>
-  <div class="form-inline">
+<form  (ngSubmit)="login()">
+  <div class="form-group">
     <label>Email</label>
     <input formControlName="email" type="email" class="form-control" placeholder="Email" required>
   </div>
-  <div>
+  <div class="form-group">
     <label>Mot de passe</label>
     <input formControlName="motDePasse" type="password" class="form-control" placeholder="Mot de passe" required>
   </div>
