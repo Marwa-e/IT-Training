@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./inscription.component.css']
 })
 export class InscriptionComponent implements OnInit {
-  form!: FormGroup;
+  form: FormGroup|any;
 
 
   constructor(
