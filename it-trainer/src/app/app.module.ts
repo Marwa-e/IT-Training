@@ -19,6 +19,7 @@ import { FormateurComponent } from './composants/formateur/formateur.component';
 import { AdresseComponent } from './composants/adresse/adresse.component';
 import { EntrepriseComponent } from './composants/entreprise/entreprise.component';
 import { EquipeComponent } from './composants/equipe/equipe.component';
+import { PrerequisComponent } from './composants/prerequis/prerequis.component';
 
 
 
@@ -41,7 +42,8 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
     AdresseComponent,
     EntrepriseComponent,
     EquipeComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    PrerequisComponent
   ],
   imports: [
     BrowserModule,

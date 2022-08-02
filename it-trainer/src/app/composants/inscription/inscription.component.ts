@@ -23,7 +23,7 @@ export class InscriptionComponent implements OnInit {
 nom:'',
 email:'',
 motDePasse:'',
-
+      
     })
   }
 
@@ -32,4 +32,11 @@ motDePasse:'',
     {withCredentials:true})
       .subscribe(() => this.router.navigate(['/login']));
   }
+  // password(formGroup: FormGroup) {
+  //   const { value: password } = formGroup.get('password');
+  //   const { value: confirmPassword } = formGroup.get('confirmpassword');
+  //   return password === confirmPassword ? null : { passwordNotMatch: true };
+  // }
 }
+
+

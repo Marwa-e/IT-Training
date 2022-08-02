@@ -11,7 +11,7 @@ export interface Formation{
     duree?: number
     date_debut?: Date
     prix?: number
-    niveau?:string
+    niveau?:Niveau
     lieu?: Adresse
     lien_Test?: string
     formateurs?:Formateur[]
