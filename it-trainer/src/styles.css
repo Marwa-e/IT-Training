@@ -89,7 +89,10 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  
+  max-width : 100%;
+  height : auto;
+  
 }
 
 @media (max-width: 991px) {

@@ -19,6 +19,7 @@ import { AdresseComponent } from './composants/adresse/adresse.component';
 import { EntrepriseComponent } from './composants/entreprise/entreprise.component';
 import { EquipeComponent } from './composants/equipe/equipe.component';
 import { MenuComponent } from './composants/menu/menu.component';
+import { FooterComponent } from './composants/footer/footer.component';
 
 
 
@@ -39,7 +40,8 @@ import { MenuComponent } from './composants/menu/menu.component';
     FormateurComponent,
     AdresseComponent,
     EntrepriseComponent,
-    EquipeComponent
+    EquipeComponent,
+    FooterComponent
     
   ],
   imports: [
