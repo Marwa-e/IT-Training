@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- loginForm!: FormGroup;
+ loginForm?: FormGroup;
 
 
   constructor(private formBuilder: FormBuilder) {}
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 // Methode appelée lors du clic sur le bouton "submit" 
 
 login() {
-  console.log('Données du formulaire...', this.loginForm.value);
+  console.log('Données du formulaire...', this.loginForm?.value);
 }
 }
 
