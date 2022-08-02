@@ -1,6 +1,9 @@
-.d-flex button{
-
-        position: absolute;
-        height: 40px;
-        background:#206bfb;
-}
+p {
+        font-family: Lato;
+      }
+      .error-message {
+        color: red;
+      }
+      input.ng-touched.ng-invalid {
+        border: 1px solid red;
+      }

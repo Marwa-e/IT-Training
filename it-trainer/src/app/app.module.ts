@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -40,8 +41,8 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
     FormateurComponent,
     AdresseComponent,
     EntrepriseComponent,
-    EquipeComponent,
-    InscriptionComponent
+    EquipeComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -50,7 +51,6 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
     FormsModule,
     ReactiveFormsModule,
     
-
 
   ],
   providers: [],

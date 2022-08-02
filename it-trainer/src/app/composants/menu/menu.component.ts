@@ -19,11 +19,17 @@ export class MenuComponent implements OnInit {
     })
   }
 
-  openPopup(){
+  displayStyle = "none";
 
+  openPopup(){
+    this.displayStyle = "block";
   }
 
   closePopup(){
-    
+    this.displayStyle = "none";
   }
+
+
+
+  
 }
