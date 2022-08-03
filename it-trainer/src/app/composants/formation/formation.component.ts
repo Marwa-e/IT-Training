@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Categorie } from 'src/app/interfaces/categorie';
 import { Formation } from 'src/app/interfaces/formation';
+import { AdresseService } from 'src/app/services/adresse.service';
+import { CategorieService } from 'src/app/services/categorie.service';
 import { FormationsService } from 'src/app/services/formations.service';
 import { NiveauService } from 'src/app/services/niveau.service';
 
@@ -17,7 +19,7 @@ export class FormationComponent implements OnInit {
   formations : Formation[] = []
   categoriesEnCours : Categorie[]=[]
 
-  constructor(private router : Router, private f : FormationsService, private nv: NiveauService, private route: ActivatedRoute) { }
+  constructor(private router : Router, private f : FormationsService, private route: ActivatedRoute, private c : CategorieService, private a : AdresseService, private nv : NiveauService) { }
 
   ngOnInit(): void {
     this.initFormation();
@@ -37,8 +39,10 @@ export class FormationComponent implements OnInit {
       this.initFormation();
     })
   }
-  chercherUneFormation() {
-
+  chercherUneFormation(id : number) {
+    this.f.getOneFormation(id).subscribe(res => {
+      this.initFormation();
+    })
   }
   initFormation(id:number=1) {
     this.f.getAllFormations().subscribe(res => {

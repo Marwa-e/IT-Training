@@ -18,6 +18,7 @@ import { FormateurComponent } from './composants/formateur/formateur.component';
 import { AdresseComponent } from './composants/adresse/adresse.component';
 import { EntrepriseComponent } from './composants/entreprise/entreprise.component';
 import { EquipeComponent } from './composants/equipe/equipe.component';
+import { PrerequisComponent } from './composants/prerequis/prerequis.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { FooterComponent } from './composants/footer/footer.component';
 
@@ -41,8 +42,8 @@ import { FooterComponent } from './composants/footer/footer.component';
     AdresseComponent,
     EntrepriseComponent,
     EquipeComponent,
-    FooterComponent
-    
+    FooterComponent,
+    PrerequisComponent
   ],
   imports: [
     BrowserModule,

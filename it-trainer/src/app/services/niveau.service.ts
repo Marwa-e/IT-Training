@@ -15,13 +15,13 @@ export class NiveauService {
   getOneNiveau(id: number) {
     return this.http.get<Niveau>(this.url + '/' + id);
   }
-  addNiveau(f: Niveau) {
-    return this.http.post<Niveau>(this.url, f);
+  addNiveau(n: Niveau) {
+    return this.http.post<Niveau>(this.url, n);
   }
   delNiveau(id: number) {
     return this.http.delete<Niveau>(this.url + '/' + id);
   }
-  updateNiveau(f: Niveau) {
-    return this.http.put<Niveau>(this.url + '/' + f.id, f);
+  updateNiveau(n: Niveau) {
+    return this.http.put<Niveau>(this.url + '/' + n.id, n);
   }
 }
