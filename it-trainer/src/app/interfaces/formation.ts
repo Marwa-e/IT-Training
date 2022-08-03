@@ -4,7 +4,7 @@ import { Formateur } from "./formateur";
 import { Niveau } from "./niveau";
 
 export interface Formation{
-    id?: number
+    id: number
     categorie?:Categorie
     intitule?: string
     description?: string

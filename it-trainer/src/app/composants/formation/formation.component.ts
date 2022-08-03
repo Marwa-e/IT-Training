@@ -16,7 +16,7 @@ import { PrerequisService } from 'src/app/services/prerequis.service';
 })
 export class FormationComponent implements OnInit {
 
-  formation: Formation = {}
+  formation: any = {};
   formations: Formation[] = []
   categoriesEnCours: Categorie[] = []
   idEncours: number = 1
@@ -45,6 +45,17 @@ export class FormationComponent implements OnInit {
     this.f.getOneFormation(id).subscribe(res => {
       this.initFormation();
     })
+  }
+  chercherUnLieu() {
+    this.f.getOneLieu
+  }
+  chercherUnNiveau(id_niveau : number) {
+    this.f.getOneNiveau(id_niveau).subscribe(res => {
+      this.initFormation();
+    })
+  }
+  chercherUnPrerequis() {
+    this.f.getOnePrerequis
   }
 
   initFormation(id?: number) {

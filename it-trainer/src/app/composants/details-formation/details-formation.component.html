@@ -1,0 +1,4 @@
+<div *ngFor="let item of this.formationsEnCours" data-filter="*.filter-app"
+                routerLink="/formation/{{item.id}}" (click)="chercherUneFormation(item.id)">
+                {{ item.intitule }}{{item.description}}{{item.lien_Test}}{{item.prix}}{{item.niveau}}{{item.lieu}}{{item.formateurs}}{{item.duree}}{{item.date_debut}}
+              </div>

@@ -22,9 +22,10 @@ import { PrerequisComponent } from './composants/prerequis/prerequis.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { FooterComponent } from './composants/footer/footer.component';
 import { CategorieComponent } from './composants/categorie/categorie.component';
-import { UserComponent } from './composants/user/user.component';
+//import { UserComponent } from './composants/user/user.component';
 import { RegisterComponent } from './composants/register/register.component';
 import { ContactComponent } from './composants/contact/contact.component';
+import { DetailsFormationComponent } from './composants/details-formation/details-formation.component';
 
 
 @NgModule({
@@ -47,9 +48,10 @@ import { ContactComponent } from './composants/contact/contact.component';
     FooterComponent,
     PrerequisComponent,
     CategorieComponent,
-    UserComponent,
+    //UserComponent,
     RegisterComponent,
-    ContactComponent
+    ContactComponent,
+    DetailsFormationComponent
   ],
   imports: [
     BrowserModule,

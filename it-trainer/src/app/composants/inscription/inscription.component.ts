@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { EmailValidator, FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-inscription',
@@ -15,7 +15,8 @@ export class InscriptionComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private router: Router
+    private router: Router,
+    private route : ActivatedRoute
     ) { }
 
   ngOnInit(): void {
@@ -23,6 +24,7 @@ export class InscriptionComponent implements OnInit {
 nom:'',
 email:'',
 motDePasse:'',
+
       
     })
   }
