@@ -27,9 +27,6 @@ import { RegisterComponent } from './composants/register/register.component';
 import { ContactComponent } from './composants/contact/contact.component';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
