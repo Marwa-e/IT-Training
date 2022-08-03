@@ -8,6 +8,7 @@ import { LoginComponent } from './composants/login/login.component';
 import { InscriptionComponent } from './composants/inscription/inscription.component';
 import { CarousselComponent } from './composants/caroussel/caroussel.component';
 import { RechercherComponent } from './composants/rechercher/rechercher.component';
+import { ContactComponent } from './composants/contact/contact.component';
 import { FormationComponent } from './composants/formation/formation.component';
 import { EquipeComponent } from './composants/equipe/equipe.component';
 
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'inscription', component: InscriptionComponent },
   { path: 'caroussel', component: CarousselComponent },
   { path: 'rechercher', component: RechercherComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'formation', component: FormationComponent },
   { path: 'formation/:id', component: FormationComponent }, 
   { path: 'equipe', component: EquipeComponent },

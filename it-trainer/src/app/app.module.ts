@@ -21,6 +21,7 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
 import { PrerequisComponent } from './composants/prerequis/prerequis.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { FooterComponent } from './composants/footer/footer.component';
+import { ContactComponent } from './composants/contact/contact.component';
 
 
 
@@ -43,7 +44,8 @@ import { FooterComponent } from './composants/footer/footer.component';
     EntrepriseComponent,
     EquipeComponent,
     FooterComponent,
-    PrerequisComponent
+    PrerequisComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,43 @@
-p {
-        font-family: Lato;
-      }
-      .error-message {
-        color: red;
-      }
-      input.ng-touched.ng-invalid {
-        border: 1px solid red;
-      }
+/**
+* Get Startet Button 
+*/
+.get-started-btn {
+  margin-left: 20px;
+  background: #5fcf80;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: none;
+}
+
+.get-started-btn:hover {
+  background: #3ac162;
+  color: #fff;
+}
+
+
+.getstarted{
+  padding: 10px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  line-height: 1;
+  color: #5f687b;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #cdd1d9;
+}
+
+
+.getstarted:hover,
+.getstarted:focus:hover {
+  background: #3ac162;
+  color: #fff;
+  border-color: #3ac162;
+}
+
+
