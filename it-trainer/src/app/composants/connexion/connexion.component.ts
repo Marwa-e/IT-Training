@@ -18,7 +18,7 @@ export class ConnexionComponent implements OnInit {
   isLoginFailed = false;
   errorMessage = '';
   roles: string[] = [];
-  private loginInfo: AuthLoginInfo;
+  private loginInfo?: AuthLoginInfo;
  
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
  
@@ -38,9 +38,9 @@ export class ConnexionComponent implements OnInit {
  
     this.authService.attemptAuth(this.loginInfo).subscribe(
       data => {
-        this.tokenStorage.saveToken(data.accessToken);
-        this.tokenStorage.saveUsername(data.username);
-        this.tokenStorage.saveAuthorities(data.authorities);
+        this.tokenStorage.saveToken(data.accessToken || "");
+        this.tokenStorage.saveUsername(data.username || "");
+        this.tokenStorage.saveAuthorities(data.authorities || []);
  
         this.isLoginFailed = false;
         this.isLoggedIn = true;

@@ -10,7 +10,7 @@ import { SignUpInfo } from '../auth/signup-info';
 })
 export class RegisterComponent implements OnInit {
   form: any = {};
-  signupInfo: SignUpInfo;
+  signupInfo?: SignUpInfo;
   isSignedUp = false;
   isSignUpFailed = false;
   errorMessage = '';

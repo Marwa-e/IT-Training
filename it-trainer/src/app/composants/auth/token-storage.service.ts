@@ -23,7 +23,7 @@ export class TokenStorageService {
   }
  
   public getToken(): string {
-    return sessionStorage.getItem(TOKEN_KEY);
+    return sessionStorage.getItem(TOKEN_KEY)|| "";
   }
  
   public saveUsername(username: string) {
@@ -32,7 +32,7 @@ export class TokenStorageService {
   }
  
   public getUsername(): string {
-    return sessionStorage.getItem(USERNAME_KEY);
+    return sessionStorage.getItem(USERNAME_KEY) || "";
   }
  
   public saveAuthorities(authorities: string[]) {
@@ -44,7 +44,7 @@ export class TokenStorageService {
     this.roles = [];
  
     if (sessionStorage.getItem(TOKEN_KEY)) {
-      JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY)).forEach(authority => {
+      JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY) || "").forEach((authority: { authority: string; }) => {
         this.roles.push(authority.authority);
       });
     }

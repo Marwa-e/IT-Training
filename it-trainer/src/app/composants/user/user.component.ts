@@ -7,8 +7,8 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  board: string;
-  errorMessage: string;
+  board?: string;
+  errorMessage?: string;
  
   constructor(private userService: UserService) { }
  
