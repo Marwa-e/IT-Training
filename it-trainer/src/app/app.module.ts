@@ -21,13 +21,10 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
 import { PrerequisComponent } from './composants/prerequis/prerequis.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { FooterComponent } from './composants/footer/footer.component';
-<<<<<<< HEAD
 import { CategorieComponent } from './composants/categorie/categorie.component';
 import { UserComponent } from './composants/user/user.component';
 import { RegisterComponent } from './composants/register/register.component';
-=======
 import { ContactComponent } from './composants/contact/contact.component';
->>>>>>> 84f13e55b74493a137f6619602e0400c78924a45
 
 
 
@@ -51,13 +48,10 @@ import { ContactComponent } from './composants/contact/contact.component';
     EquipeComponent,
     FooterComponent,
     PrerequisComponent,
-<<<<<<< HEAD
     CategorieComponent,
     UserComponent,
-    RegisterComponent
-=======
+    RegisterComponent,
     ContactComponent
->>>>>>> 84f13e55b74493a137f6619602e0400c78924a45
   ],
   imports: [
     BrowserModule,
