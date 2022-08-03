@@ -34,19 +34,22 @@
 */
 .get-started-btn {
   margin-left: 20px;
-  background: #5fcf80;
-  color: #fff;
-  border-radius: 5px;
+    background: none;
+    padding: 0 20px;
+    background: #16df7e;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   padding: 8px 25px;
   white-space: nowrap;
-  transition: 0.3s;
   font-size: 14px;
   display: inline-block;
   border: none;
 }
 
 .get-started-btn:hover {
-  background: #3ac162;
+  background: #206bfb;
   color: #fff;
 }
 
@@ -61,14 +64,15 @@
   font-size: 14px;
   font-weight: 500;
   border: 1px solid #cdd1d9;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 
 .getstarted:hover,
 .getstarted:focus:hover {
-  background: #3ac162;
+  background:  #206bfb;
   color: #fff;
-  border-color: #3ac162;
+  border-color: #206bfb;
 }
 
 
@@ -113,7 +117,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: #37423b;
+  color: #5f687b;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -129,7 +133,7 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #5fcf80;
+  color: #16df7e;
 }
 
 .navbar .dropdown ul {
@@ -260,7 +264,7 @@
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37423b;
+  color:  #5f687b;
 }
 
 .navbar-mobile a:hover,

@@ -12,4 +12,19 @@ export class CategorieService {
   findByMere(id:number){
     return this.http.get<Categorie[]>(this.url+"/findByMere/"+id.toString());
   }
+  getAllCategories() {
+    return this.http.get<Categorie[]>(this.url);
+  }
+  getOneCategorie(id: number) {
+    return this.http.get<Categorie>(this.url + '/' + id);
+  }
+  addCategorie(c: Categorie) {
+    return this.http.post<Categorie>(this.url, c);
+  }
+  delCategorie(id: number) {
+    return this.http.delete<Categorie>(this.url + '/' + id);
+  }
+  updateCategorie(c: Categorie) {
+    return this.http.put<Categorie>(this.url + '/' + c, c);
+  }
 }

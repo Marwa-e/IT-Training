@@ -7,6 +7,7 @@ import { AdresseService } from 'src/app/services/adresse.service';
 import { CategorieService } from 'src/app/services/categorie.service';
 import { FormationsService } from 'src/app/services/formations.service';
 import { NiveauService } from 'src/app/services/niveau.service';
+import { PrerequisService } from 'src/app/services/prerequis.service';
 
 @Component({
   selector: 'app-formation',
@@ -20,7 +21,7 @@ export class FormationComponent implements OnInit {
   categoriesEnCours: Categorie[] = []
   idEncours: number = 1
 
-  constructor(private router: Router, private f: FormationsService, private route: ActivatedRoute, private c: CategorieService, private a: AdresseService, private nv: NiveauService) { }
+  constructor(private router : Router, private f : FormationsService, private route: ActivatedRoute, private c : CategorieService, private a : AdresseService, private nv : NiveauService, private p : PrerequisService) { }
 
   ngOnInit(): void {
     this.initFormation();

@@ -29,4 +29,7 @@ export class FormationsService {
   getOneNiveau(id_niveau: number) {
     return this.http.get<Formation>(this.url + '/' + id_niveau);
   }
+  getOnePrerequis(lien_Test : string) {
+    return this.http.get<Formation>(this.url + '/' + lien_Test);
+  }
 }
