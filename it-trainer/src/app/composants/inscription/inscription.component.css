@@ -1,6 +1,10 @@
 /**
 * Get Startet Button 
 */
+
+.contact{
+  padding-top: 120px;
+}
 .get-started-btn {
   margin-left: 20px;
   background: #5fcf80;
