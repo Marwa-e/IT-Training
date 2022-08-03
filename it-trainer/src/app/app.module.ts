@@ -21,17 +21,11 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
 import { PrerequisComponent } from './composants/prerequis/prerequis.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { FooterComponent } from './composants/footer/footer.component';
-<<<<<<< HEAD
 import { CategorieComponent } from './composants/categorie/categorie.component';
 import { UserComponent } from './composants/user/user.component';
 import { RegisterComponent } from './composants/register/register.component';
 import { ContactComponent } from './composants/contact/contact.component';
-=======
-import { ContactComponent } from './composants/contact/contact.component';
-import { CategorieComponent } from './composants/categorie/categorie.component';
-import { UserComponent } from './composants/user/user.component';
-import { RegisterComponent } from './composants/register/register.component';
->>>>>>> 1f79587d4fee77d139d2de53be9657e94579d437
+
 
 
 
