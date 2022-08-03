@@ -15,11 +15,12 @@ import { NiveauService } from 'src/app/services/niveau.service';
 })
 export class FormationComponent implements OnInit {
 
-  formation : Formation = {}
-  formations : Formation[] = []
-  categoriesEnCours : Categorie[]=[]
+  formation: Formation = {}
+  formations: Formation[] = []
+  categoriesEnCours: Categorie[] = []
+  idEncours: number = 1
 
-  constructor(private router : Router, private f : FormationsService, private route: ActivatedRoute, private c : CategorieService, private a : AdresseService, private nv : NiveauService) { }
+  constructor(private router: Router, private f: FormationsService, private route: ActivatedRoute, private c: CategorieService, private a: AdresseService, private nv: NiveauService) { }
 
   ngOnInit(): void {
     this.initFormation();
@@ -29,7 +30,7 @@ export class FormationComponent implements OnInit {
       this.initFormation();
     })
   }
-  supprimerFormation(id : number) {
+  supprimerFormation(id: number) {
     this.f.delFormation(id).subscribe(res => {
       this.initFormation();
     })
@@ -39,20 +40,20 @@ export class FormationComponent implements OnInit {
       this.initFormation();
     })
   }
-  chercherUneFormation(id : number) {
+  chercherUneFormation(id: number) {
     this.f.getOneFormation(id).subscribe(res => {
       this.initFormation();
     })
   }
-  initFormation(id:number=1) {
+
+  initFormation(id?: number) {
     this.f.getAllFormations().subscribe(res => {
       this.formations = res;
-      this.formations.forEach(f=>{
-       if ( f.categorie?.mere?.id==id){
-        this.categoriesEnCours.push(f);
-       }
+      res.forEach(f => {
+        if (f.categorie?.mere?.id == id) {
+          this.categoriesEnCours.push(f);
+        }
       })
-      
     })
 
   }
