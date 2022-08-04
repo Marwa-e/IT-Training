@@ -26,10 +26,7 @@ h2 {
  
 }
 
-.contact .section-title {
-  padding: 30px;
-  size: 24px;
-}
+
 
 .contact .info {
     border-top: 3px solid #16df7e;
@@ -206,3 +203,18 @@ h2 {
       transform: rotate(360deg);
     }
   }
+
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #16df7e;
+    margin: 4px 10px;
+}
+
+
+.section-title {
+    padding-bottom: 40px;
+    padding-top: 100px;
+}
