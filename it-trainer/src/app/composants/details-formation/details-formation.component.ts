@@ -9,7 +9,7 @@ import { FormationsService } from 'src/app/services/formations.service';
   styleUrls: ['./details-formation.component.css']
 })
 export class DetailsFormationComponent implements OnInit {
-  id = 0;
+  id:any;
   formation! : Formation;
   formations : Formation[] = [];
   formationsEnCours: Formation[] = [];
@@ -21,6 +21,7 @@ export class DetailsFormationComponent implements OnInit {
       this.id = Number(res.get('id'));
       this.f.getOneFormation(this.id).subscribe(res => {
         this.formation = res;
+        console.log(this.formation);
       })
     })
   }
@@ -37,7 +38,7 @@ export class DetailsFormationComponent implements OnInit {
   chercherUneFormation(id : number) {
     this.f.getOneFormation(id).subscribe(res => {
       this.router.navigateByUrl('/details-formation');
-      this.formation=res;
+      //this.formation=res;
       //this.formationsEnCours.push(this.formation);
     })
   }

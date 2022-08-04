@@ -1,224 +1,38 @@
-
 <!-- ======= Popular Courses Section ======= -->
 
 <section id="popular-courses section-bg" class="courses">
   <div class="container" data-aos="fade-up">
     <div class="section-title" style="margin-top: 150px;">
       <span>Formations</span>
-      <h2>Nos Meilleurs Formations </h2>       
-    </div>
-    
-    <section id="categorie" class="categorie">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-end">
-            <ul id="categorie-flters">
-              <li *ngFor="let item of formations" data-filter="*.filter-app"
-                routerLink="/formation/{{item.id}}" (click)="initFormation()">
-                {{ item.intitule }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- ======= Popular Courses Section ======= -->
-<section id="popular-courses" class="courses">
-  <div class="container" data-aos="fade-up">
-
-    
-    <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="course-item">
-          <img src="assets/img/design thinking.jpg" class="img-fluid" alt="...">
-          
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h4>Design Thinking</h4>
-              <p class="price">240€</p>
-            </div>
-
-            <h3><a href="/details-formation">Design Web</a></h3>
-            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.
-            </p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
-                <span>Jacke Masito</span>
-              </div>
-              <a href="#!" class="btn btn-primary">Voir</a>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bx bx-user"></i>&nbsp;50
-                &nbsp;&nbsp;
-                <i class="bx bx-heart"></i>&nbsp;65
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-        <div class="course-item">
-          <img src="assets/img/cours.jpg" class="img-fluid" alt="...">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h4>Marketing</h4>
-              <p class="price">250€</p>
-            </div>
-
-            <h3><a href="/details-formation">Data Scientist</a></h3>
-            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.
-            </p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="assets/img/team-5.jpg" class="img-fluid" alt="">
-                <span>James William</span>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bx bx-user"></i>&nbsp;35
-                &nbsp;&nbsp;
-                <i class="bx bx-heart"></i>&nbsp;42
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-        <div class="course-item">
-          <img src="assets/img/developpement_java.jpg" class="img-fluid" alt="...">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              
-              <h4>Content</h4>
-              <p class="price">180€</p>
-            </div>
-
-            <h3><a href="/details-formation">Copywriting</a></h3>
-            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.
-            </p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="assets/img/team-6.jpg" class="img-fluid" alt="">
-                <span>Veronica Vahn</span>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bx bx-user"></i>&nbsp;20
-                &nbsp;&nbsp;
-                <i class="bx bx-heart"></i>&nbsp;85
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
-
+      <h2>Nos Meilleurs Formations </h2>
     </div>
 
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="courses_button trans_200"><a href="/formation">En savoir plus</a></div>
-    </div>
-  </div>
+    <div class="container" data-aos="fade-up">
 
-  <div class="container" data-aos="fade-up">
-
-    <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-        <div class="course-item">
-          <img src="assets/img/design thinking.jpg" class="img-fluid" alt="...">
-          
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h4>Design Thinking</h4>
-              <p class="price">240€</p>
-            </div>
-
-            <h3><a href="/details-formation">Design Web</a></h3>
-            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.
-            </p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
-                <span>Jacke Masito</span>
-              </div>
-              <a href="#!" class="btn btn-primary">Voir</a>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bx bx-user"></i>&nbsp;50
-                &nbsp;&nbsp;
-                <i class="bx bx-heart"></i>&nbsp;65
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-        <div class="course-item">
-          <img src="assets/img/cours.jpg" class="img-fluid" alt="...">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h4>Marketing</h4>
-              <p class="price">250€</p>
-            </div>
-
-            <h3><a href="/details-formation">Data Scientist</a></h3>
-            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.
-            </p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="assets/img/team-5.jpg" class="img-fluid" alt="">
-                <span>James William</span>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bx bx-user"></i>&nbsp;35
-                &nbsp;&nbsp;
-                <i class="bx bx-heart"></i>&nbsp;42
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
-
-      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-        <div class="course-item">
-          <img src="assets/img/developpement_java.jpg" class="img-fluid" alt="...">
-          <div class="course-content">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              
-              <h4>Content</h4>
-              <p class="price">180€</p>
-            </div>
-
-            <h3><a href="/details-formation">Copywriting</a></h3>
-            <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.
-            </p>
-            <div class="trainer d-flex justify-content-between align-items-center">
-              <div class="trainer-profile d-flex align-items-center">
-                <img src="assets/img/team-6.jpg" class="img-fluid" alt="">
-                <span>Veronica Vahn</span>
-              </div>
-              <div class="trainer-rank d-flex align-items-center">
-                <i class="bx bx-user"></i>&nbsp;20
-                &nbsp;&nbsp;
-                <i class="bx bx-heart"></i>&nbsp;85
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Course Item-->
-
-    </div>
-
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="courses_button trans_200"><a href="/formation">En savoir plus</a></div>
-    </div>
-  </div>
-
+      <div class="row" data-aos="zoom-in" data-aos-delay="100">
   
-</section><!-- End Popular Courses Section -->
+        <div class="col-lg-4 col-md-6 d-flex">
+          <ng-container *ngFor="let item of formations">
+            <div class="course-item" >
+              <img src="{{item?.lienImage}}" class="img-fluid" alt="...">
+              
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>{{item?.categorie.intitule}}</h4>
+                  <p class="price">{{item.prix}}</p>
+                </div>
+    
+                <h3><a routerLink="/details-formation/{{item.id}}">{{ item.intitule }}</a></h3>
+                <p>{{item.descriptif}}</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
+                    <span>{{item?.formateur.nom}} {{item?.formateur.prenom}}</span>
+                  </div>
+                  <a routerLink="/details-formation/{{item.id}}" class="btn btn-primary">Details</a>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div> <!-- End Course Item-->
+      </div>
