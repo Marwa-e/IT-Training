@@ -1,25 +1,29 @@
 
 .categorie #categorie-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
+  padding: 0px;
+  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
   border-radius: 50px;
+  color: #5f687b!important;
+  font-family: "Poppins", sans-serif;
 }
 
 .categorie #categorie-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 20px 15px;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 7;
   text-transform: uppercase;
-  color: #444444;
   transition: all 0.3s ease-in-out;
 }
 
-.categorie #categorie-flters li:hover,
+.categorie #categorie-flters li:hover
+{
+  color:  #206bfb;
+}
 .categorie #categorie-flters li.filter-active {
   color: #16df7e;
 }
@@ -32,6 +36,14 @@
 
 --------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+
+.cours {
+  padding-top: 20px;
+}
 
 .courses .course-item {
     border-radius: 5px;
@@ -104,10 +116,20 @@
     color: #657a6d;
   }
   
- 
- 
- 
- 
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #16df7e;
+    margin: 4px 10px;
+  }
+  .section-title {
+    color: #5f687b!important;
+    padding: 20px;
+    margin-right: 20px;
+   
+}
  
  
  
