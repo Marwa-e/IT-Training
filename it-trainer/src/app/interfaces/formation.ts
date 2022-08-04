@@ -7,13 +7,13 @@ export interface Formation{
     id: number
     categorie?:Categorie
     intitule?: string
-    description?: string
+    descriptif?: string
     duree?: number
     date_debut?: Date
     prix?: number
     niveau?:Niveau
     lieu?: Adresse
     lien_Test?: string
-    formateurs?:Formateur[]
-    lien_image?: string
+    formateur?:Formateur
+    lienImage?: string
 }

@@ -46,6 +46,11 @@ export class InscriptionComponent implements OnInit {
         }
       );
   }
+  // password(formGroup: FormGroup) {
+  //   const { value: password } = formGroup.get('password');
+  //   const { value: confirmPassword } = formGroup.get('confirmpassword');
+  //   return password === confirmPassword ? null : { passwordNotMatch: true };
+  // }
 
 
 }
