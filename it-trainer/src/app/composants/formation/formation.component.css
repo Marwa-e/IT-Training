@@ -1,22 +1,43 @@
 
+.course-item {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+
+
+
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+ p {
   font-family: "Poppins", sans-serif!important;
-  color: #5f687b!important;
+  
 }
 
 
+
+
 .categorie #categorie-flters {
-  padding: 0px;
-  margin: 0 auto 20px auto;
+  padding: 0rem;
+  margin: 0 auto 1rem auto;
   list-style: none;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 2rem;
   color: #5f687b!important;
   font-family: "Poppins", sans-serif;
 }
@@ -24,8 +45,8 @@ p {
 .categorie #categorie-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 20px 15px;
-  font-size: 14px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 7;
   text-transform: uppercase;
@@ -46,102 +67,117 @@ p {
 
 
 
---------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
 .cours {
-  padding-top: 20px;
+  padding-top: 1rem;
 }
 
 .courses .course-item {
-    border-radius: 5px;
-    border: 1px solid #eef0ef;
+    border-radius: 0.3;
+    border: 0.15rem solid #eef0ef;
+
   }
   
-  .img-course {
-    max-height: 12rem;
+  .img-courses {
+    max-height: 10rem;
     width: 100%;
     object-fit: cover;
   }
   
   .courses .course-content {
-    padding: 15px;
+    padding: 0rem;
+    margin-top: 1rem;
   }
   
   .courses .course-content h3 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1rem;
   }
   
   .courses .course-content h3 a {
-    color: #37423b;
+    color:#5fcf80;
     transition: 0.3s;
   }
   
   .courses .course-content h3 a:hover {
-    color: #5fcf80;
+    color: #206bfb;
   }
   
   .courses .course-content p {
-    font-size: 14px;
-    color: #777777;
+    font-size: 1rem;
+    color:  #206bfb;
   }
   
   .courses .course-content h4 {
-    font-size: 14px;
+    font-size:small;
     background: #5fcf80;
-    padding: 7px 14px;
-    color: #fff;
-    margin: 0;
+    padding: 0.5rem 1rem;
+   max-width: auto;
   }
   
   .courses .course-content .price {
     margin: 0;
-    font-weight: 700;
-    font-size: 18px;
-    color: #37423b;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #5f687b;
+    display: flex;
   }
   
   .courses .trainer {
-    padding-top: 15px;
-    border-top: 1px solid #eef0ef;
+    padding-top: 1rem;
+    border-top: 0.1rem solid #eef0ef;
   }
   
   .courses .trainer .trainer-profile img {
-    max-width: 50px;
-    border-radius: 50px;
+    max-width: 2rem;
+    border-radius: 2rem;
   }
   
   .courses .trainer .trainer-profile span {
-    padding-left: 10px;
+    padding-left: 0.6rem;
     font-weight: 600;
-    font-size: 16px;
-    color: #5a6c60;
+    font-size: 0.rem;
+    color:#5f687b;
   }
   
   .courses .trainer .trainer-rank {
-    font-size: 18px;
-    color: #657a6d;
+    font-size: 1rem;
+    color:#5f687b;
   }
   
   .section-title h2::after {
     content: "";
-    width: 120px;
-    height: 1px;
+    width: 10rem;
+    height: 0.1rem;
     display: inline-block;
     background: #16df7e;
-    margin: 4px 10px;
+    margin: 0.2rem 0.5rem;
   }
   .section-title {
     color: #5f687b!important;
-    padding: 20px;
-    margin-right: 20px;
+    padding: 1rem;
+    margin-right: 1rem;
    
 }
  
  
- 
+.btn{
+  padding: 0.65rem 1.5rem;
+  margin-left: 1rem;
+  border-radius: 2%;
+  line-height: 1;
+  color: #206bfb;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 0.1rem solid#206bfb;
+  
+  
+}
+
+
+.btn:hover,
+.btn:focus:hover {
+  background:  #16df7e;
+  color: #fff;
+  border-color: #16df7e;
+}
