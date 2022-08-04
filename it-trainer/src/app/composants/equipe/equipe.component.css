@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.team {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
 .team .member {
     text-align: center;
     margin-bottom: 20px;
@@ -50,3 +54,19 @@
     margin: 0 2px;
   }
   
+
+
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #16df7e;
+    margin: 4px 10px;
+}
+
+
+.section-title {
+    padding-bottom: 40px;
+    padding-top: 100px;
+}

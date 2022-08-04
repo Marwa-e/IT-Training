@@ -2,12 +2,48 @@
 * Get Startet Button 
 */
 
-.contact{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
+  
+  font-family: "Poppins", sans-serif;
+  color: #5f687b!important;
+}
+
+h2 {
+
+  padding: 30px;
+}
+.contact {
   padding-top: 120px;
+  padding-bottom: 80px;
+  text-align: center;
+ 
+}
+
+.form-control-lg {
+  font-size: 14px;
+}
+.form-label {
+  font-weight: 600;  
+  color: #5f687b;
+}
+
+.form-check-label {
+  color: #5f687b;
+}
+.fw-bold {
+  color: #206bfb;
+  font-family: "Poppins", sans-serif;
 }
 .get-started-btn {
   margin-left: 20px;
-  background: #5fcf80;
+  background: #16df7e;
   color: #fff;
   border-radius: 5px;
   padding: 8px 25px;
@@ -19,7 +55,7 @@
 }
 
 .get-started-btn:hover {
-  background: #3ac162;
+  background: #206bfb;
   color: #fff;
 }
 
@@ -39,9 +75,9 @@
 
 .getstarted:hover,
 .getstarted:focus:hover {
-  background: #3ac162;
+  background: #206bfb;
   color: #fff;
-  border-color: #3ac162;
+  border-color: #206bfb;
 }
 
 

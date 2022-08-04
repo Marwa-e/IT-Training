@@ -28,9 +28,6 @@ import { ContactComponent } from './composants/contact/contact.component';
 import { DetailsFormationComponent } from './composants/details-formation/details-formation.component';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,

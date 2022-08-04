@@ -1,10 +1,7 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
-
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-
+    <h1 class="logo me-auto"><a href="index.html">IT-TRAINING</a></h1>
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul>
         <li><a class="nav-link scrollto active" href="">Accueil</a></li>
@@ -23,7 +20,7 @@
     </nav><!-- .navbar -->
     <div>
       <!------------------------------------- bouton connexion ---------------------------------------->
-      <div class="container">
+      <div class="contact">
         <button class="get-started-btn" type="button" (click)="openPopup()">Se connecter</button>
         <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -35,20 +32,22 @@
               </div>
               <div class="modal-body mx-3">
                 <div class="form-title text-center ">
-                  <h4>Connexion</h4>
+                  <h4 class="text-uppercase text-center mb-5">Connexion</h4>
                 </div>
                 <div class="d-flex flex-column text-center">
                   <form>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                      <input type="email" id="form2Example1" class="form-control" />
-                      <label class="form-label" for="form2Example1">Email</label>
+                      <label class="form-label left" for="form2Example1">Email</label>
+                      <input type="email" id="form2Example1" class="form-control"  placeholder="Ecrire ici..."/>
+                      
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                      <input type="password" id="form2Example2" class="form-control" />
-                      <label class="form-label" for="form2Example2">Mot de passe</label>
+                      <label class="form-label left" for="form3Example4cg">Mot de passe</label>
+                      <input type="password" id="form2Example2" class="form-control" placeholder="Ecrire ici..." />
+                      
                     </div>
                     <!-- 2 column grid layout for inline styling -->
                     <div class="row mb-4">
@@ -61,15 +60,15 @@
                       </div>
                       <div class="col">
                         <!-- Simple link -->
-                        <a href="#!">Mot de passe oublié?</a>
+                        <a class="form-check-label" href="#!">Mot de passe oublié?</a>
                       </div>
                     </div>
                     <!-- Submit button -->
-                    <button type="button" class="btn btn-primary btn-block mb-4">Se connecter</button>
+                    <button type="button" class="get-started-btn btn-block mb-4">Se connecter</button>
 
                     <!-- Register buttons -->
                     <div class="text-center">
-                      <p>Pas encore un Membre? <a href="/home">S'inscrire</a></p>
+                      <p>Pas encore un Membre? <a class="form-check-input" href="/home">S'inscrire</a></p>
                     </div>
                   </form>
                 </div>
@@ -83,16 +82,38 @@
 
 
     <!------------------------------------- Bouton inscription  ---------------------------------------->
+    <div>
+      <button type="button" class="getstarted scrollto" routerLink="/inscription">Inscription</button>
+    </div>
 
-
-
-
-    
-<div>
-  <button type="button" class="getstarted scrollto" routerLink="/inscription">Inscription</button>     
-      </div>
-  
   </div>
 </header><!-- End Header -->
 
 <main id="main" data-aos="fade-in">
+
+
+
+
+
+
+
+
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    .left{
+      float: left;
+    }
+    </style>
