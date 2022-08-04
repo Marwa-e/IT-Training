@@ -4,6 +4,8 @@
 .team {
   padding-top: 50px;
   padding-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #5f687b!important;
 }
 .team .member {
     text-align: center;
@@ -69,4 +71,5 @@
 .section-title {
     padding-bottom: 40px;
     padding-top: 100px;
+    margin-left: 15px;
 }

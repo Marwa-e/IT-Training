@@ -5,7 +5,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #5f687b!important;
 }
 
 a {
@@ -24,7 +24,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif!important;
+  color: #5f687b!important;
 }
 
 /*--------------------------------------------------------------
