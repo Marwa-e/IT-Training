@@ -160,3 +160,9 @@
       text-align-last: center;
     }
   }
+
+  .float-end img {
+    max-height: 40px;
+   
+   
+  }

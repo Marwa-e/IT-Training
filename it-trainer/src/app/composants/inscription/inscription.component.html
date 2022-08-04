@@ -1,37 +1,39 @@
 <section class="contact">
   <div class="mask d-flex align-items-center">
     <div class="container h-100">
+      
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-          <div class="card" style="border-radius: 15px;">
+          <div class="card" style="border-radius: 10px;">
+            <h2 class="text-uppercase text-center mb-5">Creer un compte</h2>
             <div class="card-body p-5">
               <div *ngIf="isSignedUp; else signupForm">
-                Your registration is successful. Please login!
+               Votre inscription a bien été enregistré. Connectez-vous!
               </div>
 
               <ng-template #signupForm>
-                <div class="row col-sm-6" style="max-width:350px;">
+                <div class="row col-sm-6" style="width:500px;">
                   <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                     <div class="form-group">
-                      <label for="username">Username</label>
+                      <label for="username" style="float: left;">Nom</label>
                       <input type="text" class="form-control" name="username" [(ngModel)]="form.username"
-                        #username="ngModel" />
+                        #username="ngModel" placeholder="Ecrire ici ..."/>
 
                     </div>
                     <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="text" class="form-control" name="email" [(ngModel)]="form.email" #email="ngModel" />
+                      <label for="email" style="float: left;">Email</label>
+                      <input type="text" class="form-control" name="email" [(ngModel)]="form.email" #email="ngModel"  placeholder="Ecrire ici ..."/>
 
                     </div>
                     <div class="form-group">
-                      <label for="password">Password</label>
+                      <label for="password" style="float: left;">Mot de passe</label>
                       <input type="password" class="form-control" name="password" [(ngModel)]="form.password"
-                        #password="ngModel" required minlength="6" />
+                        #password="ngModel" required minlength="6" placeholder="Ecrire ici ..."/>
                     </div>
                     <div class="form-group">
-                      <button class="btn btn-primary">Register</button>
+                      <button class="btn btn-primary">S'inscrire</button>
                       <div *ngIf="f.submitted && isSignUpFailed" class="alert alert-warning">
-                        Signup failed!<br />{{errorMessage}}
+                        Erreur d'inscription!<br />{{errorMessage}}
                       </div>
                     </div>
                   </form>

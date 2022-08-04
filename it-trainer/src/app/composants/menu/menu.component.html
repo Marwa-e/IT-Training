@@ -10,12 +10,13 @@
             <li *ngFor="let item of this.categoriesInitiales">
               <a routerLink="/formation/{{item.id}}">{{ item.intitule }}</a>
             </li>
-           
+
           </ul>
         </li>
         <li><a class="nav-link scrollto" routerLink="/equipe">Equipe</a></li>
         <li><a class="nav-link scrollto" routerLink="/contact">Contact</a></li>
       </ul>
+
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
     <div>
@@ -34,34 +35,30 @@
                 <div *ngIf="isLoggedIn; else loggedOut">
                   Logged in as {{roles}}.
                 </div>
-                 
+
                 <ng-template #loggedOut>
                   <div class="row col-sm-6" style="max-width:350px;">
                     <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
                       <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" [(ngModel)]="form.username" #username="ngModel"
-                          required />
-                  
+                        <label for="username" style="float: left;">Nom</label>
+                        <input type="text" class="form-control" name="username" [(ngModel)]="form.username"
+                          #username="ngModel" required />
+
                       </div>
                       <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" [(ngModel)]="form.password" #password="ngModel"
-                          required minlength="6" />
-                        
+                        <label for="password" style="float: left;">Mot de passe</label>
+                        <input type="password" class="form-control" name="password" [(ngModel)]="form.password"
+                          #password="ngModel" required minlength="6" />
+
                       </div>
                       <div class="form-group">
-                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-primary">Se connecter</button>
                         <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger">
                           Login failed: {{errorMessage}}
                         </div>
                       </div>
                     </form>
-                    <hr />
-                    <p>Don't have an account?</p>
-                    
-                    <a href="signup" class="btn btn-success">Sign Up</a>
-                    
+
                   </div>
                 </ng-template>
               </div>
@@ -76,6 +73,7 @@
     <!------------------------------------- Bouton inscription  ---------------------------------------->
     <div>
       <button type="button" class="getstarted scrollto" routerLink="/inscription">Inscription</button>
+      <button *ngIf="isLoggedIn" type="button" class="getstarted scrollto" (click)="logout()">Se déconnecter</button>
     </div>
 
   </div>
@@ -90,8 +88,8 @@
 
 
 
- 
-   
+
+
 
 
 
@@ -105,7 +103,7 @@
 
 
   <style>
-    .left{
+    .left {
       float: left;
     }
-    </style>
+  </style>

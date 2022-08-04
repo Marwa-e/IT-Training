@@ -75,5 +75,10 @@ export class MenuComponent implements OnInit {
     window.location.reload();
   }
 
+  logout() {
+    this.tokenStorage.signOut();
+    window.location.reload();
+  }
+
   
 }
