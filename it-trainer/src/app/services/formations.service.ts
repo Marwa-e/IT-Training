@@ -32,4 +32,7 @@ export class FormationsService {
   getOnePrerequis(lien_Test : string) {
     return this.http.get<Formation>(this.url + '/' + lien_Test);
   }
+  getOneImage(lien_image : string) {
+    return this.http.get<Formation>(this.url + '/' + lien_image);
+  }
 }

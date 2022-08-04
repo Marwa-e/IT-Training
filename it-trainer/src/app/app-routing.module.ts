@@ -11,11 +11,13 @@ import { RechercherComponent } from './composants/rechercher/rechercher.componen
 import { ContactComponent } from './composants/contact/contact.component';
 import { FormationComponent } from './composants/formation/formation.component';
 import { EquipeComponent } from './composants/equipe/equipe.component';
+import { DetailsFormationComponent } from './composants/details-formation/details-formation.component';
+import { RegisterComponent } from './composants/register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'login', component: LoginComponent },
+  //{ path: 'login', component: LoginComponent },
   { path: 'inscription', component: InscriptionComponent },
   { path: 'caroussel', component: CarousselComponent },
   { path: 'rechercher', component: RechercherComponent },
@@ -25,7 +27,10 @@ const routes: Routes = [
   { path: 'equipe', component: EquipeComponent },
   { path: 'client', component: ClientComponent },
   { path: 'internaute', component: InternauteComponent }, 
-  { path: 'internaute/:id', component: InternauteComponent } 
+  { path: 'internaute/:id', component: InternauteComponent }, 
+  { path: 'details-formation/:id', component: DetailsFormationComponent },
+  { path: 'auth/login', component: LoginComponent },
+  { path: 'signup', component: RegisterComponent } 
 ];
 
 @NgModule({

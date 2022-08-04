@@ -57,15 +57,18 @@ export class FormationComponent implements OnInit {
   chercherUnPrerequis() {
     this.f.getOnePrerequis
   }
+  chercherUneImage() {
+    this.f.getOneImage
+  }
 
-  initFormation(id?: number) {
+  initFormation() {
     this.f.getAllFormations().subscribe(res => {
       this.formations = res;
-      res.forEach(f => {
-        if (f.categorie?.mere?.id == id) {
-          this.categoriesEnCours.push(f);
-        }
-      })
+      // res.forEach(f => {
+      //   if (f.categorie?.mere?.id == id) {
+      //     this.categoriesEnCours.push(f);
+      //   }
+      // })
     })
 
   }

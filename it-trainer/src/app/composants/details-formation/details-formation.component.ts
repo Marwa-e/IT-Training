@@ -36,8 +36,9 @@ export class DetailsFormationComponent implements OnInit {
   }
   chercherUneFormation(id : number) {
     this.f.getOneFormation(id).subscribe(res => {
-      this.router.navigateByUrl('/formation');
-      this.formationsEnCours.push(this.formation);
+      this.router.navigateByUrl('/details-formation');
+      this.formation=res;
+      //this.formationsEnCours.push(this.formation);
     })
   }
   ajouterFormation() {

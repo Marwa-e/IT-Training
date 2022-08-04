@@ -15,4 +15,5 @@ export interface Formation{
     lieu?: Adresse
     lien_Test?: string
     formateurs?:Formateur[]
+    lien_image?: string
 }
