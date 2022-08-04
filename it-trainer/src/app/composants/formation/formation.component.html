@@ -14,15 +14,10 @@
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-end">
             <ul id="categorie-flters">
-              <li *ngFor="let item of this.categoriesEnCours" data-filter="*.filter-app"
-                routerLink="/formation/{{item.id}}" (click)="initFormation(item.id)">
+              <li *ngFor="let item of formations" data-filter="*.filter-app"
+                routerLink="/formation/{{item.id}}" (click)="initFormation()">
                 {{ item.intitule }}
               </li>
-              <hr>
-              <li data-filter="*" class="filter-active">Communication</li>
-              <li data-filter=".filter-app">Digital</li>
-              <li data-filter=".filter-card">Programmation</li>
-              <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
         </div>
