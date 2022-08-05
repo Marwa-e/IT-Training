@@ -8,4 +8,5 @@ export interface Formateur {
     email?: string
     telephone?: Telephone
     categorie?:Categorie
+    lienPhoto?: string
 }
