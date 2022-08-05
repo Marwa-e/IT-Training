@@ -17,7 +17,9 @@ p
 
 h2 {
 
-  padding: 30px;
+  padding: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .contact {
   padding-top: 120px;
@@ -204,6 +206,7 @@ h2 {
     }
   }
 
+
   .section-title h2::after {
     content: "";
     width: 120px;
@@ -216,6 +219,5 @@ h2 {
 
 .section-title {
     padding-bottom: 40px;
-    padding-top: 100px;
-    margin-right: 50px;
+   
 }
