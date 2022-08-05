@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Categorie } from 'src/app/interfaces/categorie';
+import { Formation } from 'src/app/interfaces/formation';
 import { CategorieService } from 'src/app/services/categorie.service';
+import { FormationsService } from 'src/app/services/formations.service';
 import { AuthService } from '../auth/auth.service';
 import { AuthLoginInfo } from '../auth/login-info';
 import { TokenStorageService } from '../auth/token-storage.service';
@@ -19,10 +21,13 @@ export class MenuComponent implements OnInit {
   errorMessage = '';
   roles: string[] = [];
   private loginInfo!: AuthLoginInfo;
+  formation: any = {};
+  formations: Formation[] = []
+  categoriesEnCours: Categorie[] = []
 
   categoriesInitiales:Categorie[]=[]
   constructor(private route: ActivatedRoute,private cat:CategorieService,private router:Router,
-    private authService: AuthService, private tokenStorage: TokenStorageService) { }
+    private authService: AuthService, private tokenStorage: TokenStorageService, private f : FormationsService) { }
 
   ngOnInit(): void {
     this.cat.findByMere(1).subscribe(resul => {
@@ -79,6 +84,21 @@ export class MenuComponent implements OnInit {
     this.tokenStorage.signOut();
     window.location.reload();
   }
-
+  chercherUneCategorie(id : number) {
+    this.f.getOneCategorie(id).subscribe(res => {
+      this.initFormation()
+    })
   
+}
+initFormation() {
+  this.f.getAllFormations().subscribe(res => {
+    this.formations = res;
+    //  res.forEach(c => {
+    //    if (c.categorie?.mere?.id == this.id) {
+    //       this.categoriesEnCours.push(c);
+    //    }
+    //  })
+  })
+
+}
 }
