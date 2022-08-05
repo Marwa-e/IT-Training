@@ -5,7 +5,7 @@
             <div class="col-lg-8">
                 <div class="course_container">                                      
                     <!-- Course Image -->
-                    <div class="course_image"><img src="images/course_image.jpg" alt=""></div>
+                    <div class="course_image"><img src="{{formation?.lienImage}}" class="img-fluid" alt="..."></div>
                     <!-- Course Tabs -->
                     <div class="course_tabs_container">                       
                         <div class="tab_panels">
@@ -32,12 +32,12 @@
 
                                         <!-- Course Info Item -->
                                         <div class="course_info_item">
-                                            <div class="course_info_title">Categories:</div>
-                                            <div class="course_info_text"><a href="#">{{ formation?.categorie.intitule }}</a></div>
+                                            <div class="course_info_title">Prix:</div>
+                                            <div class="course_info_text"><a href="#">{{ formation?.prix }}</a></div>
                                         </div>
                                     </div>
                                    <!-- Course Image -->
-                                    <div class="course_image"><img src="images/course_image.jpg" alt=""></div>
+                                    <div class="course_image"></div>
                                     <!-- Course Tabs -->
                                     <div class="course_tabs_container">
                                         <div class="tab_panels">
@@ -45,7 +45,8 @@
                                             <div class="tab_panel active">
                                                 <div class="tab_panel_content">
                                                     <div class="tab_panel_text">
-                                                        <p>{{ formation?.descriptif }}</p>
+                                                        <label for="description">Description : <p>{{ formation?.descriptif }}</p>
+                                                        </label>
                                                     </div>
                                                     <div class="tab_panel_text">
                                                         <p>{{ formation?.prix }}</p>

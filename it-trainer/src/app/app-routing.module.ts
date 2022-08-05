@@ -14,6 +14,7 @@ import { EquipeComponent } from './composants/equipe/equipe.component';
 import { DetailsFormationComponent } from './composants/details-formation/details-formation.component';
 import { RegisterComponent } from './composants/register/register.component';
 import { ConnexionComponent } from './composants/connexion/connexion.component';
+import { CategorieComponent } from './composants/categorie/categorie.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'internaute/:id', component: InternauteComponent }, 
   { path: 'details-formation/:id', component: DetailsFormationComponent },
   { path: 'auth/connexion', component: ConnexionComponent },
-  { path: 'signup', component: RegisterComponent } 
+  { path: 'signup', component: RegisterComponent }, 
+  { path: 'categorie/:id', component: CategorieComponent}
 ];
 
 @NgModule({

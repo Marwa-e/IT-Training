@@ -19,7 +19,7 @@ export class FormationComponent implements OnInit {
   formation: any = {};
   formations: Formation[] = []
   categoriesEnCours: Categorie[] = []
-  idEncours: number = 1
+  id: number = 1
 
   constructor(private router : Router, private f : FormationsService, private route: ActivatedRoute, private c : CategorieService, private a : AdresseService, private nv : NiveauService, private p : PrerequisService) { }
 
@@ -60,15 +60,20 @@ export class FormationComponent implements OnInit {
   chercherUneImage() {
     this.f.getOneImage
   }
+  chercherUneCategorie(id : number) {
+    this.f.getOneCategorie(id).subscribe(res => {
+      this.initFormation()
+    })
+  }
 
   initFormation() {
     this.f.getAllFormations().subscribe(res => {
       this.formations = res;
-      // res.forEach(f => {
-      //   if (f.categorie?.mere?.id == id) {
-      //     this.categoriesEnCours.push(f);
-      //   }
-      // })
+       res.forEach(c => {
+         if (c.categorie?.mere?.id == this.id) {
+            this.categoriesEnCours.push(c);
+         }
+       })
     })
 
   }

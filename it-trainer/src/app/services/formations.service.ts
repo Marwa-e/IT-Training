@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Categorie } from '../interfaces/categorie';
 import { Formation } from '../interfaces/formation';
 
 @Injectable({
@@ -34,5 +35,8 @@ export class FormationsService {
   }
   getOneImage(lien_image : string) {
     return this.http.get<Formation>(this.url + '/' + lien_image);
+  }
+  getOneCategorie(id: number) {
+    return this.http.get<Categorie>(this.url + '/' + id);
   }
 }
